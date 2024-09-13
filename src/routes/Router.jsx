@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import classes from '../style/Router.module.css'
 
 function Router() {
     return (
         <>
-            <nav>
+            <nav className={classes.container}>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
