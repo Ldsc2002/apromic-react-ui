@@ -19,7 +19,7 @@ APROMIC
 ## Getting started
 
 1. Clone this repo.
-2. Move to the appropriate directory: `cd portfolio-react-ui`.<br />
+2. Move to the appropriate directory: `cd apromic-react-ui`.<br />
 3. Run `npm install` to install dependencies.<br />
 4. Run `npm run dev` to see the example app at `http://localhost:3000/`.
 
