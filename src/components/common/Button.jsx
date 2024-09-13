@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from '../style/Button.module.css'
+import classes from '../../style/Button.module.css'
 
 function Button([link]) {
     return (
