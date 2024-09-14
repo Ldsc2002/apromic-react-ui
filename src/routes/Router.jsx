@@ -1,20 +1,30 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import classes from '../style/Router.module.css'
+import { Outlet } from 'react-router-dom'
+import NavBar from '../components/NavBar'
+
+const Routes = [
+    {
+        link: '/',
+        page: 'Página Principal',
+    },
+    {
+        link: '/nosotros',
+        page: 'Quiénes Somos',
+    },
+    {
+        link: '/contacto',
+        page: 'Contacto',
+    },
+    {
+        link: '/blog',
+        page: 'Blog',
+    },
+]
 
 function Router() {
     return (
         <>
-            <nav className={classes.container}>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                </ul>
-            </nav>
+            <NavBar navItems={Routes} title="APROMIC" />
             <Outlet />
         </>
     )
